@@ -11,9 +11,6 @@ using System.Drawing;
 using System.Windows.Forms;
 
 
-
-
-
 namespace systemnomcheat
 {
     class Program
@@ -44,12 +41,6 @@ namespace systemnomcheat
 
                                     stringBuilder.Append(GetKey.Get(key + row * 10 - row * (row - 1) * (row - 1) / 2));
 
-                                    if (GetKey.Get(key + row * 10 - row * (row - 1) * (row - 1) / 2) == 20)
-                                    {
-                                        Console.WriteLine(270+90*key+45*row+":"+490+80*row);
-                                    }
-
-
                                 }
                                 
                             }                            
@@ -74,7 +65,7 @@ namespace systemnomcheat
 
             if (color.R > 225 && color.G <150)
             {
-                Console.WriteLine(color.R + ":" + color.G);
+
                 return true;
             }
             
